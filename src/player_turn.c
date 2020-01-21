@@ -18,7 +18,7 @@ int player_line_error(game_t *setting, char **box, char *buff)
     if (line > 0 && line <= setting->lines && setting->matches[line - 1] != 0)
         return (line);
     if (line < 0) {
-        my_put_error("Error: invalid input (positive number expected\n");
+        my_put_error("Error: invalid input (positive number expected)\n");
         return (0);
     }
     if (line == 0 || line > setting->lines)
