@@ -56,5 +56,5 @@ int matchstick(int ac, char **av)
     free(game->matches);
     my_free_array(box);
     free(game);
-    return (ret);
+    return (ret == -1) ? 0 : ret;
 }
